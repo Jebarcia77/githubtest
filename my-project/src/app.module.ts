@@ -3,11 +3,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CommitsController } from './commits/commits.controller';
 import { CommitsService } from './commits/commits.service';
-import { GithubController } from './github/github.controller';
 
 @Module({
   imports: [],
-  controllers: [AppController, CommitsController, GithubController],
+  controllers: [AppController, CommitsController],
   providers: [AppService, CommitsService],
 })
 export class AppModule {}
